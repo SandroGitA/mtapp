@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MassTransitApp", "MassTransitApp\MassTransitApp.csproj", "{3C969F95-4B37-4025-B0CD-63F9793B1E61}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3E2721BC-EC71-41A7-95A3-31285DE2AF38} = {3E2721BC-EC71-41A7-95A3-31285DE2AF38}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsumerWebApp", "ConsumersTest\ConsumerWebApp.csproj", "{6AE729BC-130E-468A-BECA-5E54DC1B3B0A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsumerConsoleApp", "ConsumerConsoleApp\ConsumerConsoleApp.csproj", "{C1971CE3-2F96-4075-A1B9-58A494B4BB9F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3E2721BC-EC71-41A7-95A3-31285DE2AF38} = {3E2721BC-EC71-41A7-95A3-31285DE2AF38}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTMessages", "MassTransitApp.Messages\MTMessages.csproj", "{3E2721BC-EC71-41A7-95A3-31285DE2AF38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumerConsoleAppDouble", "ConsumerConsoleAppDouble\ConsumerConsoleAppDouble.csproj", "{2A854787-2041-4202-AB21-4F8D193F5199}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C969F95-4B37-4025-B0CD-63F9793B1E61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C969F95-4B37-4025-B0CD-63F9793B1E61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C969F95-4B37-4025-B0CD-63F9793B1E61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C969F95-4B37-4025-B0CD-63F9793B1E61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AE729BC-130E-468A-BECA-5E54DC1B3B0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AE729BC-130E-468A-BECA-5E54DC1B3B0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AE729BC-130E-468A-BECA-5E54DC1B3B0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AE729BC-130E-468A-BECA-5E54DC1B3B0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1971CE3-2F96-4075-A1B9-58A494B4BB9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1971CE3-2F96-4075-A1B9-58A494B4BB9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1971CE3-2F96-4075-A1B9-58A494B4BB9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1971CE3-2F96-4075-A1B9-58A494B4BB9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E2721BC-EC71-41A7-95A3-31285DE2AF38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E2721BC-EC71-41A7-95A3-31285DE2AF38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E2721BC-EC71-41A7-95A3-31285DE2AF38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E2721BC-EC71-41A7-95A3-31285DE2AF38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A854787-2041-4202-AB21-4F8D193F5199}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A854787-2041-4202-AB21-4F8D193F5199}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A854787-2041-4202-AB21-4F8D193F5199}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A854787-2041-4202-AB21-4F8D193F5199}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9ED16CC4-ED61-481A-B8BD-A9046C9D76D7}
+	EndGlobalSection
+EndGlobal
