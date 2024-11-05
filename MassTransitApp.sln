@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsumerConsoleApp", "Consu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTMessages", "MassTransitApp.Messages\MTMessages.csproj", "{3E2721BC-EC71-41A7-95A3-31285DE2AF38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumerConsoleAppDouble", "ConsumerConsoleAppDouble\ConsumerConsoleAppDouble.csproj", "{2A854787-2041-4202-AB21-4F8D193F5199}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsumerConsoleAppDouble", "ConsumerConsoleAppDouble\ConsumerConsoleAppDouble.csproj", "{2A854787-2041-4202-AB21-4F8D193F5199}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumerConsoleAppCommand", "ConsumerConsoleAppCommand\ConsumerConsoleAppCommand.csproj", "{08432CEF-3FD2-42C7-AF3E-2C51C33AB90E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{2A854787-2041-4202-AB21-4F8D193F5199}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A854787-2041-4202-AB21-4F8D193F5199}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A854787-2041-4202-AB21-4F8D193F5199}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08432CEF-3FD2-42C7-AF3E-2C51C33AB90E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08432CEF-3FD2-42C7-AF3E-2C51C33AB90E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08432CEF-3FD2-42C7-AF3E-2C51C33AB90E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08432CEF-3FD2-42C7-AF3E-2C51C33AB90E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

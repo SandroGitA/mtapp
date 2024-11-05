@@ -17,7 +17,7 @@ namespace ConsumerWebApp.Consumers
             var ctx = context.Message;
 
             _logger.LogInformation(
-                $"COMMAND: команда на создание {ctx.Model} c id {ctx.Id} цвета {ctx.Color} с хоста {context.Host.MachineName}");
+                $"COMMAND: команда на создание {ctx.Model} c id {ctx.Id} с хоста {context.Host.MachineName}");
 
             return Task.CompletedTask;
         }

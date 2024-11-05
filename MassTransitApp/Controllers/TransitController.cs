@@ -27,7 +27,7 @@ namespace MassTransitApp.Controllers
             {
                 _publishEndpoint.Publish(new ConsoleAppEvent(
                 Guid.NewGuid(),
-                $"Console {i}",
+                $"EVENT #{i}",
                 DateTime.UtcNow));
             }
 
@@ -57,17 +57,20 @@ namespace MassTransitApp.Controllers
         }
 
         [HttpPost("create-car-command")]
-        public async Task<IResult> DeleteCarCommand()
+        public async Task<IResult> CreateCarCommand()
         {
             string url = "exchange:RenameEndpointTest";
             var endpoint = await _sendEndpointProvider.GetSendEndpoint(new Uri(url));
 
-            await endpoint.Send(new CreateCarCommand(
-               Guid.NewGuid(),
-               "Audi",
-               "Black",
-               2020,
-               DateTime.UtcNow));
+            for (int i = 0; i < 100; i++)
+            {
+                await endpoint.Send(new CreateCarCommand(
+                   Guid.NewGuid(),
+                   $"Audi #{i}",                  
+                   DateTime.UtcNow));
+            }
+
+            //await Task.Delay(30000);
 
             return Results.Ok();
         }
